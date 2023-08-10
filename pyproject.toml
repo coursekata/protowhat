@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "protowhat"
+version = "2.2.0"
+description = "Prototype package for submission correctness testing"
+authors = ["Filip Schouwenaars <filip@datacamp.com>"]
+maintainers = ["Jeroen Hermans <content-engineering@datacamp.com>"]
+urls = { source = "https://github.com/datacamp/protowhat" }
+license = "AGPL-3.0"
+readme = "README.md"
+classifiers=[
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GNU Affero General Public License v3",
+  "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Jinja2 = "^3.1.2"
+markdown2 = "^2.4.10"
+Pygments = "^2.16.1"
+
+[tool.poetry.group.dev.dependencies]
+bashlex = "^0.18"
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+Sphinx = "^7.1.2"
+sphinx-rtd-theme = "^1.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
